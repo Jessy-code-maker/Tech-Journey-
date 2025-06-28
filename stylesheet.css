@@ -3,13 +3,17 @@ button {
     padding: 10px 30px;
     border: none;
     border-radius: 10px;
+    transition: color 0.3s, border 0.3s; 
 }
 
 button:hover {
     scale: 1;
     background-color: #656565;
    border: 2px solid #656565;
+   text-decoration-color: white;
+   color: white;
 }
+
 .container {
     display: flex;
     width: 100%;
@@ -17,11 +21,12 @@ button:hover {
     margin: auto;
     border-radius: 20px;
     background-color:burlywood;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
 }
 
 body {
 font-family: Georgia, 'Times New Roman', Times, serif;
-background-image: url(unsplash_7.png);
+background-image: url(unsplash_7.jpg);
 background-size: cover;
 background-position: center;
 margin: 30px;
@@ -29,19 +34,25 @@ margin: 30px;
 
 .image-container {
    width: 100%;
+   min-width: 300px;
+   align-items: center;
+   padding: 5px;
 }
 
 .image-container img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 20px 0 0 20px;
 }
+
 .text-container{
     background-image: url(unsplash_3.png);
     width: 100%;
     background-size: cover;
     background-position: center;
     padding: 20px;
+    border-radius: 0 20px 20px 0;
 } 
 
 textarea {
@@ -53,3 +64,38 @@ textarea {
     font-size: 1em;
 }
 
+.intro-quote {
+    font-family: serif,sans-serif;
+    font-style: italic;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 8px rgba(243, 6, 6, 0.2);
+}
+
+a {
+    color: blue;
+}
+
+.quote {
+    font-family: serif,sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 24px;
+}
+strong {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+ul {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+textarea {
+    margin-bottom: 12px;
+}
+.button-container {
+    margin-bottom: 20px;
+}
