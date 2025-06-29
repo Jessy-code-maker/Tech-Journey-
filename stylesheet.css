@@ -83,8 +83,7 @@ a {
 }
 
 strong {
-    display: inline-block;
-    margin-bottom: 12px;
+    display: inline;
 }
 
 ul {
@@ -109,4 +108,35 @@ h3 {
 
 p {
     text-align: justify;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 16px 0;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        max-width: 98vw;
+    }
+    .image-container {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+    }
+    .image-container img {
+        width: 80vw;
+        max-width: 350px;
+        height: auto;
+        border-radius: 20px 20px 0 0;
+    }
+    .text-container {
+        width: 100%;
+        border-radius: 0 0 20px 20px;
+        padding: 16px;
+    }
 }
