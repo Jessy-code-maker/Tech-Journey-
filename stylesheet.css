@@ -17,7 +17,7 @@ button:hover {
 .container {
     display: flex;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1000px;
     margin: 30px auto;
     border-radius: 20px;
     background-color:  #6a6e77;
@@ -48,11 +48,13 @@ margin: 30px;
 
 .text-container{
     background-image: url(unsplash_3.png);
-    width: 100%;
+    width: 90%;
     background-size: cover;
     background-position: center;
     padding: 20px;
     border-radius: 0 20px 20px 0;
+    overflow: auto;
+    max-height: 800px; ;
 } 
 
 textarea {
@@ -112,31 +114,7 @@ p {
 
 footer {
     color: #fff;
-    text-align: center;
     padding: 16px 0;
-}
-
-@media (max-width: 800px) {
-    .container {
-        flex-direction: column;
-        max-width: 98vw;
-    }
-    .image-container {
-        width: 100%;
-        border-radius: 20px 20px 0 0;
-        display: flex;
-        justify-content: center;
-        padding: 10px 0;
-    }
-    .image-container img {
-        width: 80vw;
-        max-width: 350px;
-        height: auto;
-        border-radius: 20px 20px 0 0;
-    }
-    .text-container {
-        width: 100%;
-        border-radius: 0 0 20px 20px;
-        padding: 16px;
-    }
+    justify-content: right;
+    display: flex;
 }
